@@ -43,7 +43,7 @@ body{
 }
 
 #navigation a:hover{
-background-color: red;
+    background-color: red;
     transition: all;
     transition-duration: 1s;
 }
@@ -61,6 +61,13 @@ background-color: red;
     text-align: center;
 }
 
+#contact{
+    display: block;
+    position: absolute fixed;
+    padding-left: 1em;
+    margin-top: 80px;
+    line-height: 3px;
+}
 
     /**
 graphic.html css
@@ -154,6 +161,13 @@ texture.html css
     font-weight: 300;
     }
 
+    @media(max-width:900px){
+        .texture img{
+            width: 400px;
+            height: 300px;
+        }
+    }
+
 /**
 sign.html css
 **/
@@ -168,4 +182,64 @@ sign.html css
 .sign img{
     width: 600px;
     height: 400px;
+}
+
+@media(max-width:650px){
+    .sign img{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+/**
+video.html css
+**/
+
+iframe{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+
+@media(max-width:800px){
+    iframe{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+/**
+content.html css
+**/
+
+.content_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 100px;
+}
+
+.content_img img{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+.content_img img:hover{
+    transition: all 0.3s;
+    width: 350px;
+    height: 350px;
+}
+
+@media(max-width:1000px){
+    #content_box img{
+        width: 100px;
+        height: 100px;
+    }
 }
